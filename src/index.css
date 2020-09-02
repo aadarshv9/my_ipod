@@ -236,6 +236,7 @@ code {
   position: absolute;
   left: 36%;
   top: 10%;
+  cursor: pointer;
 }
 #backward {
   color: darkgray;
@@ -244,6 +245,7 @@ code {
   position: absolute;
   left: 9%;
   top: 40%;
+  cursor: pointer;
 }
 #select {
   width: 90px;
@@ -253,6 +255,7 @@ code {
   position: absolute;
   top: 31%;
   left: 33%;
+  cursor: pointer;
 }
 #forward {
   color: darkgray;
@@ -261,6 +264,7 @@ code {
   position: absolute;
   right: 9%;
   top: 40%;
+  cursor: pointer;
 }
 #play-pause {
   color: darkgray;
@@ -269,6 +273,7 @@ code {
   position: absolute;
   left: 43.5%;
   top: 81%;
+  cursor: pointer;
 }
 /* general classes */
 .mt5 {

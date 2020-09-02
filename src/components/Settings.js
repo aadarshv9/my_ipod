@@ -9,9 +9,13 @@ class Settings extends React.Component {
         <div id="screenList" style={{ width: '100%' }}>
           {settingList.map((item, index) =>
             index === settingPosition ? (
-              <div className="screenListItem activeListItem">{item}</div>
+              <div className="screenListItem activeListItem" key={index}>
+                {item}
+              </div>
             ) : (
-              <div className="screenListItem">{item}</div>
+              <div className="screenListItem" key={index}>
+                {item}
+              </div>
             )
           )}
         </div>

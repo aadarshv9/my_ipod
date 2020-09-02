@@ -10,9 +10,13 @@ class Themes extends React.Component {
         <div id="screenList" style={{ width: '100%' }}>
           {themeList.map((item, index) =>
             index === themePosition ? (
-              <div className="screenListItem activeListItem">{item}</div>
+              <div className="screenListItem activeListItem" key={index}>
+                {item}
+              </div>
             ) : (
-              <div className="screenListItem">{item}</div>
+              <div className="screenListItem" key={index}>
+                {item}
+              </div>
             )
           )}
         </div>

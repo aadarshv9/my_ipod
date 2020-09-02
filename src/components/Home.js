@@ -10,9 +10,13 @@ class Home extends React.Component {
         <div id="screenList">
           {homeList.map((item, index) =>
             index === homePosition ? (
-              <div className="screenListItem activeListItem">{item}</div>
+              <div className="screenListItem activeListItem" key={index}>
+                {item}
+              </div>
             ) : (
-              <div className="screenListItem">{item}</div>
+              <div className="screenListItem" key={index}>
+                {item}
+              </div>
             )
           )}
         </div>

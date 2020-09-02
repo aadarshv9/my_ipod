@@ -9,9 +9,13 @@ class WheelColor extends React.Component {
         <div id="screenList" style={{ width: '100%' }}>
           {wheelColorList.map((item, index) =>
             index === wheelColorPosition ? (
-              <div className="screenListItem activeListItem">{item}</div>
+              <div className="screenListItem activeListItem" key={index}>
+                {item}
+              </div>
             ) : (
-              <div className="screenListItem">{item}</div>
+              <div className="screenListItem" key={index}>
+                {item}
+              </div>
             )
           )}
         </div>

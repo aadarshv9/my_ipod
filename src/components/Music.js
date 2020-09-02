@@ -9,9 +9,13 @@ class Music extends React.Component {
         <div id="screenList" style={{ width: '100%' }}>
           {musicList.map((item, index) =>
             index === musicPosition ? (
-              <div className="screenListItem activeListItem">{item}</div>
+              <div className="screenListItem activeListItem" key={index}>
+                {item}
+              </div>
             ) : (
-              <div className="screenListItem">{item}</div>
+              <div className="screenListItem" key={index}>
+                {item}
+              </div>
             )
           )}
         </div>
